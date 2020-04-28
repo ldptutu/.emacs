@@ -132,12 +132,7 @@
 (require 'org-agenda)
 (setq org-agenda-files (quote ("d:/work/org/dailywork.org/")))
 (global-set-key (kbd "<f12>") 'org-agenda)
-
-(add-to-list 'exec-path "F:/tools/curl-7.66.0-win64-mingw/bin/")
-(defun dploy()
-  "hhh"
-    (interactive)
-    (call-process "curl.exe" nil 0 nil "--insecure --user vsl:123..com -T D:\\work\\git\\extremevision-trace_jvm_back\\target\\reid-1.2.1-SNAPSHOT.jar sftp://192.168.9.34/tmp/reid_jinan.jar" ))
+ 
 
 
 (use-package cider
